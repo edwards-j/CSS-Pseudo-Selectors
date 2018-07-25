@@ -22,11 +22,11 @@
 
 }
 
-li::after {
+.top li::after {
     content: ",";
 }
 
-li:last-of-type::after {
+.top li:last-of-type::after {
     content: none;
 }
 
@@ -74,4 +74,26 @@ article::before {
     border: 4px dashed gray;
     background-color: royalblue;
     display: block
+}
+
+
+/* Create a navigation bar out of an unordered list element, and add the following interactivity. */
+nav li {
+    list-style-type: none;
+    display: inline;
+}
+
+/* When the user hovers over one of the links, the color of the text should change. */
+nav li:hover {
+    color: red;
+}
+
+/* When the user hovers over one of the links, the background color of the element that contains the link should change. */
+nav li:hover {
+    background-color: aquamarine;
+}
+
+/* When the user clicks on one of the links, the element that contains the link should grow in size by 5px on the left and right. */
+nav li:active {
+    padding: 0 5px;
 }
